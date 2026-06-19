@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/all.js"></script>
+	<title>INDICADORES - MMIM 2025</title>
+	<!--<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">-->
+	<script src="js/plotly-3.1.0.min.js"></script>
+	<script src="js/tabulator.min.js"></script>
+	<script src="js/firebase-app.js"></script>
+	<script src="js/firebase-database.js"></script>
+	
+	<!--<script>
+		const firebaseConfig = {
+			apiKey: "YOUR_API_KEY",
+			authDomain: "indtodo.firebaseapp.com",
+			databaseURL: "https://indtodo-default-rtdb.firebaseio.com/",
+			projectId: "indtodo",
+			storageBucket: "indtodo.appspot.com",
+			messagingSenderId: "YOUR_SENDER_ID",
+			appId: "YOUR_APP_ID"
+		};	  
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+	</script>-->
+
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/tabulator_semanticui.css">
+
+	<header> 
+		<div class="contenedor_header"> 
+			<div class="selected-display" hidden> 
+				<span id="selected-month" class="selected-month">junio</span> 
+				<span id="selected-year" class="selected-year">2025</span> 
+				<span>-</span> 
+				<span id="selected-unit">Oaxaca</span> 
+			</div> 			
+
+			<div class="picker" id="fechas_chico">
+				<button class="nav-btn-2" id="prev-month"><i class="fa-solid fa-square-caret-left" style="font-size: 16px;"></i></button>
+				<div class="month-display">
+					<span id="selected-month" class="selected-month">junio</span>
+					<span id="selected-year" class="selected-year">2025</span>
+				</div>
+				<button class="nav-btn-2" id="next-month"><i class="fa-solid fa-square-caret-right" style="font-size: 16px;"></i></button>
+			</div>
+
+			<div class="rank_unidad" id="rank_unidad_2"> 
+				<div class="rank_title" id="rank_title_2">Delegacional</div> 
+				<span id="rank_2">60.0</span> 
+			</div>
+
+			<div class="picker" id="unidades_selector" hidden> 
+				<select id="unidad_select" hidden>
+					<option></option> 
+				</select> 
+			</div> 
+
+			<div class="picker" id="indicador_selector" hidden> 
+				<select id="indicador_select" hidden>
+					<option></option> 
+				</select> 
+			</div> 
+
+		</div> 
+	</header>
+</head>
+<body>
+	<div id="loader-overlay">
+		<div class="loader"></div>
+	</div>
+
+	<div class="main-space" id="vista-principal">
+		<div class="contenedor_header">'Espacio'</div>
+		<div class="content-grid-1-1-col" id="grid-primero">
+			<div class="content-grid-1-row-s" id="espacio-general-1N">
+				<div id="ranking_general_1N" class="non-clickable-plot"></div> 
+				<div id="card-rank-1N" class="content-grid-col">
+					<!-- AQUI VAN LAS TARJETAS INFORMATIVAS -->
+				</div>
+				<div class="button-ranking" >
+					<a class="link-ranking" id="go-to-rank-unidad-1">Ver ranking completo <i class="fa-solid fa-arrow-right"></i></a>
+				</div>
+			</div>
+			<div class="content-grid-1-row-s" id="espacio-general-2N">
+				<div id="ranking_general_2N" class="non-clickable-plot"></div>
+				<div id="card-rank-2N" class="content-grid-col">
+					<!-- AQUI VAN LAS TARJETAS INFORMATIVAS -->
+				</div>
+				<div class="button-ranking" >
+					<a class="link-ranking" id="go-to-rank-unidad-2">Ver ranking completo <i class="fa-solid fa-arrow-right"></i></a>
+				</div>
+			</div>			
+		</div>
+		<div class="content-grid-1-1-col" id="grid_historico">
+			<div class="content-grid-col-s" id="espacio_historico">
+				<div class="content-grid-1-row">
+					<div id="historico_act"></div>
+					<div id="historico_ant"></div>
+				</div>
+				<div id="historico-delegacional" class="non-clickable-plot"></div>
+			</div>
+			<div class="content-grid-col-s" id="espacio-mejor-peor-del">
+				<div class="tablas" id="tabla-vista-principal-1">
+					<div class="titulo_tabla"><i class="fa-solid fa-arrow-trend-up" style="color: #10b981;"></i>	Indicadores que mejoraron</div>
+					<div id="tabla_rank_comp_22"></div>
+				</div>
+				<div class="tablas" id="tabla-vista-principal-2">
+					<div class="titulo_tabla"><i class="fa-solid fa-arrow-trend-down" style="color: #ef4444;"></i>	Indicadores que empeoraron</div>
+					<div id="tabla_rank_comp_21"></div>
+				</div>
+			</div>			
+		</div>		
+	</div>   	
+	<!-- ***************************************************************** -->
+	<div class="main-space" id="vista-rank-unidad" hidden>
+		<div class="contenedor_header">'Espacio'</div>
+		<div class="content-grid-col" id="grid-primero">
+			<div class="presentacion">
+				<div class="link-ranking" id="go-to-rank-general"><i class="fa-solid fa-arrow-left"></i>Volver al ranking general</div>
+				<h1 class="encabezado">Análisis de Ranking por Unidad</h1>
+				<h6 class="comentario">Desempeño detallado y evolución de indicadores</h6>
+			</div>
+		</div>
+		
+		<div class="content-grid-col">
+			<!-- ***************************************************************** -->
+			<div class="content-grid-1-row-s" id="espacio-rank-1N" >
+				<h3 class="encabezado" >Unidad de Primer Nivel</h3>
+				<div class="content-grid-col">
+					<div class="content-grid-1-row" style="min-width: 140px;">
+						<div class="card-ranking" id="rank-unidad1-posicion" >
+							<div class="card-ranking-header">Posición actual</div>
+							<div class="card-ranking-porcentage">1° <span class="card-ranking-nota">de 25</span></div>
+						</div>
+						<div id="rank-unidad1-puntuacion"></div>
+						<div id="rank-unidad1-puntuacion_ant"></div>
+					</div>	
+
+					<div class="content-grid-col" style="grid-column: span 5;" id="historico-delegacional">
+						<div id="historico-puntuacion1" class="non-clickable-plot"></div>
+					</div>
+				</div>	
+			</div>
+
+			<!-- ***************************************************************** -->
+			<div class="content-grid-1-row-s" id="espacio-rank-2N">
+				<h3 class="encabezado" >Unidad de Segundo Nivel</h3>
+				<div class="content-grid-col">
+					<div class="content-grid-1-row" style="min-width: 140px;">
+						<div class="card-ranking" id="rank-unidad2-posicion" >
+							<div class="card-ranking-header">Posición actual</div>
+							<div class="card-ranking-porcentage">1° <span class="card-ranking-nota">de 25</span></div>
+						</div>
+						<div id="rank-unidad2-puntuacion"></div>
+						<div id="rank-unidad2-puntuacion_ant"></div>
+					</div>	
+
+					<div class="content-grid-col" style="grid-column: span 5;" id="historico-delegacional">
+						<div id="historico-puntuacion2" class="non-clickable-plot"></div>
+					</div>
+				</div>			
+
+				
+			</div>
+		</div>
+		
+		<div class="content-grid-col-s" id="espacio-mejor-peor">
+			<div class="tablas" id="tabla_rank_comp_unidad_1_">
+				<div class="titulo_tabla"><i class="fa-solid fa-arrow-trend-up" style="color: #10b981;"></i>	Indicadores que mejoraron</div>
+				<div id="tabla_rank_comp_unidad_1"></div>
+			</div>
+			<div class="tablas" id="tabla_rank_comp_unidad_2_">
+				<div class="titulo_tabla"><i class="fa-solid fa-arrow-trend-down" style="color: #ef4444;"></i>	Indicadores que empeoraron</div>
+				<div id="tabla_rank_comp_unidad_2"></div>
+			</div>
+			<div class="content-grid-1-row" id="espacio-desempeños" >
+				<div id="desempeños" class="non-clickable-plot"></div>
+				<div class="button-ranking" >
+					<a class="link-ranking" id="go-to-todos-indicadores">Ver todos los indicadores <i class="fa-solid fa-arrow-right"></i></a>
+				</div>
+			</div>
+		</div>	
+
+		<div class="content-grid-col">
+			<!-- ***************************************************************** -->
+			<div class="content-grid-1-row" id="espacio-rank-1N-2" >
+				<div class="content-grid-col-s">
+					<div class="content-grid-1-row">
+						<div class="tablas" id="tabla_unidad_1_">
+							<div id="tabla_unidad_1" ></div>
+						</div>		
+						<div id="ranking_indicador_1N" class="non-clickable-plot"></div>
+					</div>					
+				</div>
+			</div>	
+			<div class="content-grid-1-row" id="espacio-rank-2N-2" >
+				<div class="content-grid-col-s">
+					<div class="content-grid-1-row">
+						<div class="tablas" id="tabla_unidad_2_">
+							<div id="tabla_unidad_2" ></div>
+						</div>
+						<div id="ranking_indicador_2N" class="non-clickable-plot"></div>
+					</div>
+				</div>	
+			</div>	
+		</div>	
+
+		<div class="content-grid-1-col-s">
+			<!-- <div id="desempeños" class="non-clickable-plot"></div> -->
+		</div>
+	</div>
+	<!-- ***************************************************************** -->
+	<div class="main-space" id="vista-indicador" hidden>
+		<div class="contenedor_header">'Espacio'</div>
+		<div class="content-grid-col" id="grid-primero">
+			<div class="presentacion">
+				<div class="link-ranking" id="go-to-rank-unidad"><i class="fa-solid fa-arrow-left"></i>Volver al ranking por unidad</div>
+				<h1 class="encabezado">Análisis por Indicador</h1>
+			</div>			
+		</div>
+		<div class="content-grid-1-col" id="v3_presentacion">
+			<i class="fa-solid fa-heart-pulse" id="icono-corazon"></i>
+			<div class="content-grid-row" style="max-width: 700px;">
+				<h1 class="encabezado" id="v3_indicador">DM 01</h1>
+				<h6 class="comentario" id="v3_nombre_indicador">Nombre del indicador</h6>
+			</div>
+			<div id="es_ranking">
+				<div class="importante">Indicador de Ranking</div>
+			</div>
+			<div class="content-grid-col" id="espacio-descripcion">
+				<div id="v3_card_desempeño_1"></div>
+				<div id="v3_card_desempeño_2" hidden></div>
+			</div>
+		</div>
+		<div class="content-grid-1-col" id="v3_cards_resumen">
+			<div class="card-ranking" id="v3_card_resultado">
+				<div class="card-ranking-header">Resultado del indicador</div>
+				<div class="card-ranking-porcentage">90.0</div>
+				<div class="card-ranking-nota" style="font-size: 10px; margin-top: 10px;">Calculado como:</div>
+				<div class="card-ranking-nota" id="card_formula">numerador / denominador * factor</div>
+			</div>
+			<div class="card-ranking" id="v3_card_semaforo">
+				<div class="card-ranking-header">Semáforo actual</div>
+				<div class="card-ranking-porcentage" id="semaforo_actual"><i class="fa-solid fa-circle"></i> VERDE</div>
+				<div class="card-ranking-nota" id="rango_actual">Rango: 80 - 90</div>
+			</div>
+			<div class="card-ranking" id="v3_card_pond_max">
+				<div class="card-ranking-header">Ponderación máxima</div>
+				<div class="card-ranking-porcentage">#.00</div>
+				<div class="card-ranking-nota">puntos</div>
+			</div>
+			<div class="card-ranking" id="v3_card_pond_obt">
+				<div class="card-ranking-header">Ponderación obtenida</div>
+				<div class="card-ranking-porcentage">#.00</div>
+				<div class="card-ranking-nota">puntos</div>
+			</div>
+			<div class="card-ranking" id="v3_card_aporte_g">
+				<div class="card-ranking-header">Contribución al ranking</div>
+				<div class="card-ranking-porcentage" style="color: #10b981;">#.00</div>
+				<div class="card-ranking-nota">puntos aportados al ranking</div>
+			</div>
+			<div class="card-ranking" id="v3_card_aporte_p">
+				<div class="card-ranking-header">Oportunidad pérdida</div>
+				<div class="card-ranking-porcentage" style="color: #ef4444;">#.00</div>
+				<div class="card-ranking-nota">puntos recuperables para ranking</div>
+			</div>
+		</div>
+		<div class="content-grid-col" id="espacio-a-lados">
+			<div class="non-clickable-plot" id="distribucion_rangos"></div>
+			<!-- <div class="content-grid-col-s" id="espacio-numden"> -->
+				<div class="non-clickable-plot" id="historico_valor"></div>
+				<div class="tablas" >
+					<div id="tabla_numden"></div>
+				</div>
+			<!-- </div> -->
+		</div>
+		<div class="content-grid-col" id="espacio-a-lados">
+			<div class="content-grid-col-s" id="espacio-desempeños-2">
+				<div id="desempeños_2" class="non-clickable-plot"></div>
+				<div class="tablas" id="espacio-tabla-desempeños">
+					<div id="tabla_desempeños"></div>
+				</div>
+			</div>			
+			<!-- <div id="indicador_numden" class="non-clickable-plot"></div> -->
+		</div>
+	</div>
+	
+	
+	<!--<script src="https://cdn.plot.ly/plotly-basic-2.35.2.min.js" charset="utf-8"></script>-->
+	<script src="js/main.js" defer></script>
+	<script src="js/rank_x_unidad.js" defer></script>
+	<script src="js/rank_x_indicador.js" defer></script>
+</body>	
+</html>
+
