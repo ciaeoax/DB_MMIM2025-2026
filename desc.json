@@ -1,0 +1,694 @@
+[
+  {
+    "DEN": "Población de 20 años y más adscrita a médico familiar menos Prevalencias de diabetes tipo 2 específicas por grupo de edad y sexo",
+    "DEN_FIJO": 1,
+    "FACTOR": 100,
+    "INDICADOR": "DM 01",
+    "NOMBRE": "Cobertura de detección de diabetes en población derechohabiente de 20 años y más.",
+    "NUM": "Número de derechohabientes de 20 años y más, con detección de diabetes acumuladas al mes del reporte",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Población derechohabiente de 20 años y más con resultado anormal en la detección con glucosa capilar (UP-14: 192 o 193)",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "DM 02",
+    "NOMBRE": "Índice de confirmación de diabetes en casos sospechosos, población derechohabiente de 20 años y más.",
+    "NUM": "Número de derechohabientes de 20 años y más sospechosos de diabetes, resultado de la medición con glucosa capilar (UP-14) en quienes se le confirmó el padecimiento (CIE-10: E11 .0 - E14.9)",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de pacientes de 20 años y más con diagnóstico de diabetes (CIE 10: E11 a E14) subsecuente con registro de hemoglobina glucosilada (HbA1c) del periodo evaluado",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "DM 03",
+    "NOMBRE": "Porcentaje de pacientes que viven con diabetes en control glucémico con hemoglobina glucosilada (HbA1c) menor o igual a 7%.",
+    "NUM": "Total de pacientes de 20 años y más con diagnóstico de diabetes (CIE 10: E11 a E14) subsecuente con resultado de hemoglobina glucosilada (HbA1c) menor o igual a 7% del periodo evaluado",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Población Adscrita a Médico Familiar (PAMF) de 20 a 74 años",
+    "DEN_FIJO": 1,
+    "FACTOR": 100000,
+    "INDICADOR": "DM 04",
+    "NOMBRE": "Tasa de hospitalizaciones evitables por diabetes en población derechohabiente de 20 a 74 años.",
+    "NUM": "Número de egresos hospitalarios por diabetes claves CIE-10: E10-E14 en población derechohabiente de 20 a 74 años",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Pacientes con diabetes (códigos CIE-10: E10-E14) de 20 años y más, adscritos a médico familiar y registrados en el Cen so Nacional de pacientes que viven con diabetes.",
+    "DEN_FIJO": 1,
+    "FACTOR": 100000,
+    "INDICADOR": "DM 05",
+    "NOMBRE": "Índice de amputación debida a complicación por diabetes en pacientes de 20 años y más.",
+    "NUM": "Egresos hospitalarios en derechohabientes de 20 años y más, con al menos un código de diabetes (CIE-10: E10-E14) en cualquiera de los diagnósticos de la hoja de alta hospitalaria, y códigos de amputación mayor de miembros inferiores (CIE-9: 84.13-84.19) en el diagnóstico de intervención quirúrgica",
+    "PONDERACION": 0,
+    "RANKING": 0
+  },
+  {
+    "DEN": "Promedio de trabajadores asegurados en invalidez y vida en el OOAD de origen, al trimestre del reporte",
+    "DEN_FIJO": 0,
+    "FACTOR": 100000,
+    "INDICADOR": "DM 06",
+    "NOMBRE": "Tasa de incidencia de invalidez por diabetes y sus complicaciones por cada 100,000 trabajadores asegurados, según unidad médica de adscripción del trabajador.",
+    "NUM": "Total de dictámenes de invalidez iniciales (primera vez) aceptados con diagnóstico de diabetes y sus complicaciones, según OOAD de origen acumulados al trimestre del reporte",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Población de 20 años y más, adscrita a Médico Familiar menos Prevalencias de hipertensión arterial especificas por grupo de edad y sexo",
+    "DEN_FIJO": 1,
+    "FACTOR": 100,
+    "INDICADOR": "EH 01",
+    "NOMBRE": "Cobertura de detección de hipertensión arterial en población derechohabiente de 20 años y más.",
+    "NUM": "Número de derechohabientes de 20 años y más, con detección de hipertensión arterial, acumulados al mes del reporte",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de pacientes subsecuentes de 20 años y más con diagnóstico de hipertensión arterial atendidos en el período",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "EH 02",
+    "NOMBRE": "Porcentaje de pacientes de 20 años y más en control de hipertensión arterial en Medicina Familiar.",
+    "NUM": "Número de pacientes subsecuentes de 20 años y más con diagnóstico de hipertensión arterial (CIE-10: I10 - I15) con cifras de tensión arterial sistólica menor de 140 mmHg y diastólica menor de 90 mmHg atendidos en el período",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Población Adscrita a Médico Familiar (PAMF) de 20 a 74 años",
+    "DEN_FIJO": 1,
+    "FACTOR": 100000,
+    "INDICADOR": "EH 03",
+    "NOMBRE": "Tasa de hospitalizaciones evitables por hipertensión arterial en población derechohabiente de 20 a 74 años.",
+    "NUM": "Número de egresos hospitalarios por hipertensión arterial (códigos CIE-10: I10 - I13) en derechohabientes de 20 a 74 años",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Promedio de trabajadores asegurados en invalidez y vida en el OOAD origen, al trimestre del reporte",
+    "DEN_FIJO": 0,
+    "FACTOR": 100000,
+    "INDICADOR": "EH 04",
+    "NOMBRE": "Tasa de incidencia de invalidez por enfermedades hipertensivas y sus complicaciones por cada 100,000 trabajadores asegurados, según unidad médica de adscripción del trabajador.",
+    "NUM": "Total de dictámenes de invalidez iniciales (primera vez) aceptados con diagnóstico de enfermedad hipertensiva y sus complicaciones, según OOAD de origen acumulados al trimestre del reporte",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Población de mujeres entre 40 y 69 años adscritas a médico familiar menos Prevalencia de cáncer de mama en mujeres de 40 a 69 años",
+    "DEN_FIJO": 1,
+    "FACTOR": 100,
+    "INDICADOR": "CAMama 01",
+    "NOMBRE": "Cobertura de detección de cáncer de mama por mastografía en mujeres de 40 a 69 años.",
+    "NUM": "Número de mujeres entre 40 y 69 años con mastografía de tamizaje acumuladas al mes de reporte",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de pacientes que cuentan con fecha del diagnóstico histopatológico con tipo de conducta “malignos” durante el periodo a evaluar y con fecha de toma de la mastografía de tamizaje con interpretación BIRADS 4 o 5",
+    "DEN_FIJO": 0,
+    "FACTOR": 1,
+    "INDICADOR": "CAMama 02",
+    "NOMBRE": "Tiempo promedio para el diagnóstico de cáncer de mama a partir de la sospecha por mastografía de tamizaje.",
+    "NUM": "Total de días naturales transcurridos entre la fecha del diagnóstico histopatológico con tipo de conducta \"malignos\" durante el periodo a evaluar y la fecha de toma de la mastografía de tamizaje con interpretación BIRADS 4 o 5",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de pacientes que cuentan con fecha del diagnóstico histopatológico con tipo de conducta “malignos” y con fecha de inicio de tratamiento por cualquiera de las modalidades durante el periodo a evaluar",
+    "DEN_FIJO": 0,
+    "FACTOR": 1,
+    "INDICADOR": "CAMama 03",
+    "NOMBRE": "Tiempo promedio para el inicio del tratamiento del cáncer de mama.",
+    "NUM": "Total de días naturales transcurridos entre la fecha del diagnóstico histopatológico con tipo de conducta \"malignos\" y la fecha de inicio de tratamiento por cualquiera de las modalidades de las pacientes incluidas en el periodo a evaluar",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Promedio de trabajadoras aseguradas en invalidez y vida en el OOAD de origen, al trimestre del reporte",
+    "DEN_FIJO": 0,
+    "FACTOR": 100000,
+    "INDICADOR": "CAMama 04",
+    "NOMBRE": "Tasa de incidencia de invalidez por cáncer de mama por cada 100,000 trabajadoras aseguradas, según unidad médica de adscripción de la trabajadora.",
+    "NUM": "Total de dictámenes de invalidez iniciales (primera vez) aceptados con diagnóstico de cáncer de mama, según OOAD de origen acumulados al trimestre del reporte",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Población de mujeres entre 25 y 64 años adscritas a médico familiar menos Prevalencia de mujeres histerectomizadas aplicables por grupo de edad",
+    "DEN_FIJO": 1,
+    "FACTOR": 100,
+    "INDICADOR": "CACU 01",
+    "NOMBRE": "Cobertura de tamizaje de primera vez de cáncer cérvico uterino en mujeres entre 25 y 64 años.",
+    "NUM": "Número de mujeres entre 25 y 64 años con tamizaje de cáncer cérvico uterino, a tráves de la prueba de papanicolaou de primera vez acumuladas al mes de reporte",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de pacientes que cuenten con fecha del diagnóstico histopatológico con tipo de conducta \"malignos\"durante el periodo a evaluar y con fecha de toma de cítología cérvico vaginal de tamizaje con reporte de lesión",
+    "DEN_FIJO": 0,
+    "FACTOR": 1,
+    "INDICADOR": "CACU 02",
+    "NOMBRE": "Tiempo promedio para el diagnóstico de cáncer cérvico uterino a partir de la sospecha por citología cérvico vaginal de tamizaje.",
+    "NUM": "Total de días naturales transcurridos entre la fecha del diágnostico histopatológico con tipo de conducta \"malignos\" durante el periodo a evaluar y la fecha de la toma de citología cervicovaginal de tamizaje con reporte de lesión",
+    "PONDERACION": 3,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de pacientes que cuentan con fecha del diagnóstico histopatológico con tipo de conducta “malignos” y con fecha de inicio de tratamiento por cualquiera de las modalidades durante el periodo a evaluar",
+    "DEN_FIJO": 0,
+    "FACTOR": 1,
+    "INDICADOR": "CACU 03",
+    "NOMBRE": "Tiempo promedio para el inicio del tratamiento en cáncer cérvico uterino.",
+    "NUM": "Total de días naturales transcurridos entre la fecha del diagnóstico histopatológico con tipo de conducta \"malignos\" y la fecha de inicio de tratamiento por cualquiera de las modalidades de las pacientes incluidas en el periodo a evaluar",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Promedio de trabajadoras aseguradas en invalidez y vida en el OOAD de origen, al trimestre del reporte",
+    "DEN_FIJO": 0,
+    "FACTOR": 100000,
+    "INDICADOR": "CACU 04",
+    "NOMBRE": "Tasa de incidencia de invalidez por cáncer cérvico uterino por cada 100,000 trabajadoras aseguradas, según unidad médica de adscripción de la trabajadora.",
+    "NUM": "Total de dictámenes de invalidez iniciales (primera vez) aceptados con diagnóstico de cáncer cérvico uterino, según OOAD de origen acumulados al trimestre del reporte",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de embarazadas",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "Materna 01",
+    "NOMBRE": "Porcentaje de adolescentes embarazadas.",
+    "NUM": "Número de embarazadas adolescentes de 10 a 19 años",
+    "PONDERACION": 0,
+    "RANKING": 0
+  },
+  {
+    "DEN": "Total de consultas prenatales con ocasión de servicio de primera vez",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "Materna 02",
+    "NOMBRE": "Oportunidad de inicio de la vigilancia prenatal.",
+    "NUM": "Consultas prenatales con ocasión de servicio de primera vez, en el primer trimestre de la gestación",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de egresos obstétricos (CIE- 10: Capítulo XV Embarazo, parto y puerperio, Códigos O00 a O99) menos Abortos (CIE-10: Códigos O00 a O08)",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "Materna 03",
+    "NOMBRE": "Porcentaje de preeclampsia – eclampsia.",
+    "NUM": "Egresos hospitalarios con diagnóstico de preeclampsia-eclampsia (CIE-10: Códigos O11, O14 y O15)",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de egresos de partos eutócicos, distócicos vaginales, distócicos abdominales y por complicaciones de aborto",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "Materna 04",
+    "NOMBRE": "Cobertura de protección anticonceptiva posevento obstétrico.",
+    "NUM": "Total de aceptantes de método anticonceptivo en parto eutócico, distócico vaginal, distócico abdominal y por complicaciones de aborto",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de recién nacidos vivos en las Unidades médicas de Segundo Nivel o en Unidades Médicas de Alta Especialidad con atención obstétrica del IMSS régimen ordinario, en el mismo periodo y área geográfica",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "Materna 05",
+    "NOMBRE": "Porcentaje de prematurez (26 a 36.6 semanas de gestación) en Unidades médicas de Segundo Nivel de atención o en Unidades Médicas de Alta Especialidad.",
+    "NUM": "Total de recién nacidos vivos de 26 a 36.6 semanas de gestación, en un periodo y área geográfica determinada en Unidades médicas de Segundo Nivel de atención o en Unidades Médicas de Alta Especialidad",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Número de casos probables de EMC (hipotiroidismo congénito, hiperplasia suprarrenal congénita, deficiencia de biotinidasa, galactosemia) con más de 30 días de vida y Fibrosis Quística (FQ) con más de 90 días de vida a la fecha de corte (90 días para FQ), acumulados al mes evaluado",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "Neonatal 01",
+    "NOMBRE": "Seguimiento epidemiológico de casos probables de enfermedades metabólicas congénitas (EMC).",
+    "NUM": "Número de casos probables de EMC (hipotiroidismo congénito, hiperplasia suprarrenal congénita, deficiencia de biotinidasa, galactosemia) con más de 30 días de vida a la fecha de corte y Fibrosis Quística (FQ) con más de 90 días de vida, acumulados al mes evaluado, con seguimiento epidemiológico",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de personas recién nacidas de término (con 37 semanas o más de gestación), egresadas de unidades de segundo o de tercer nivel de atención, durante el periodo a evaluar",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "Neonatal 02",
+    "NOMBRE": "Porcentaje de personas recién nacidas de término (con 37 semanas o más de gestación), que son alimentadas mediante lactancia materna exclusiva al egreso de la Unidad de Segundo o de Tercer Nivel de atención.",
+    "NUM": "Total de personas recién nacidas de término (con 37 semanas o más de gestación), alimentadas mediante lactancia materna exclusiva al egreso de la unidad, durante el periodo a evaluar",
+    "PONDERACION": 0,
+    "RANKING": 0
+  },
+  {
+    "DEN": "Total de recién nacidos vivos en un periodo y área geográfica determinados",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "Neonatal 03",
+    "NOMBRE": "Proporción de prematuros (menores a 37 semanas) con peso menor o igual a 1,000 g.",
+    "NUM": "Total de recién nacidos vivos prematuros (menor de 37 semanas), con peso menor o igual a 1,000 g en un periodo y área geográfica determinados",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de recién nacidos vivos prematuros (menor de 37 semanas), con peso menor o igual a 1,200 g al nacimiento en un periodo y área geográfica determinados",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "Neonatal 04",
+    "NOMBRE": "Porcentaje de sobrevida a 28 días de recién nacidos prematuros con peso menor o igual a 1,200 g al nacimiento.",
+    "NUM": "Total de recién nacidos prematuros vivos (menor de 37 semanas), con peso menor o igual a 1,200 g, al nacimiento en un periodo y área geográfica determinados menos Total de defunciones de recién nacidos prematuros (menor de 37 semanas), con peso menor o igual a 1,200 g, al nacimiento en un periodo y área geográfica determinados",
+    "PONDERACION": 0,
+    "RANKING": 0
+  },
+  {
+    "DEN": "Número de recién nacidos hasta antes de los 28 días de vida, que desarrollaron una o más infecciones asociadas a la atención de la salud en unidades médicas de segundo nivel de atenc ión con 20 o más camas censables, o en Unidades Médicas de Alta Especialidad",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "Neonatal 05",
+    "NOMBRE": "Letalidad relacionada a Infección Asociada a la Atención de la Salud en recién nacidos hasta antes de los 28 días de vida en las unidades médicas de segundo nivel de atención con 20 o más camas censables, o en Unidades Médicas de Alta Especialidad.",
+    "NUM": "Número de defunciones por infecciones asociadas a la atención de la salud en recién nacidos hasta antes de los 28 días de vida en unidades médicas de segundo nivel de atención con 20 o más camas censables, o en Unidades Médicas de Alta Especialidad",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de recién nacidos vivos",
+    "DEN_FIJO": 0,
+    "FACTOR": 1000,
+    "INDICADOR": "Neonatal 06",
+    "NOMBRE": "Tasa de mortalidad hospitalaria por síndrome de dificultad respiratoria del recién nacido (Tipo I) y sus complicaciones.",
+    "NUM": "Defunciones de recién nacidos vivos sucedidas desde el nacimiento hasta antes de los 28 días de vida, por Síndrome de Dificultad Respiratoria del Recién Nacido y sus complicaciones (CIE 10: P22.0, P22.8, P22.9, P25, P26, P52.0, P52.1, P52.2, P52.3)",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Población derechohabiente adscrita a médico familiar",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "S.Ob 01",
+    "NOMBRE": "Cobertura de medición de peso y talla de la población derechohabiente, en unidad médica de primer nivel.",
+    "NUM": "Número de derechohabientes con medición de peso y talla acumulado al mes evaluado",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de población derechohabientes de 20 años y más, adscrita a médico familiar con medición de peso y talla en el mes evaluado",
+    "DEN_FIJO": 1,
+    "FACTOR": 100,
+    "INDICADOR": "S.Ob 02",
+    "NOMBRE": "Proporción de obesidad en derechohabientes de 20 años y más que acudieron a medición de peso y talla.",
+    "NUM": "Número de derechohabientes de 20 años y más, con obesidad en el mes evaluado",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total, de población derechohabiente de 20 años y más años, adscrita a Médico Familiar con medición de peso y talla en periodo evaluado",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "S.Ob 03",
+    "NOMBRE": "Proporción de derechohabientes de 20 años y más con obesidad grado III (IMC igual o superior a 40.0).",
+    "NUM": "Número de derechohabientes de 20 años y más con obesidad grado III (IMC igual o superior a 40.0), en el periodo evaluado",
+    "PONDERACION": 0,
+    "RANKING": 0
+  },
+  {
+    "DEN": "Número de derechohabientes de 20 años y más con UP 161 en Módulos PrevenIMSS",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "S.Ob 04",
+    "NOMBRE": "Porcentaje de confirmación diagnóstica de obesidad en Medicina Familiar de derechohabientes de 20 años y más, con índice de masa corporal igual o mayor a 30 kg/m2.",
+    "NUM": "Número de derechohabientes de 20 años y más con UP1 61 en Módulos PrevenIMSS a quienes se les confirmó un diagnóstico de Obesidad en Medicina Familiar (CIE 10: E66X, E66.1, E66.2, E66.8, E66.9, E66.0)",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de población derechohabiente adscrita a médico familiar",
+    "DEN_FIJO": 1,
+    "FACTOR": 100,
+    "INDICADOR": "CUPN 01",
+    "NOMBRE": "Cobertura de acciones preventivas PrevenIMSS en población derechohabiente.",
+    "NUM": "Número de derechohabientes a los que se les otorgó acciones preventivas en los últimos 12 meses",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Población de NN de un año de edad bajo responsabilidad institucional en el año operativo actual",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "CUPN 02",
+    "NOMBRE": "Cobertura con esquemas completos de vacunación en niñas y niños de un año de edad.",
+    "NUM": "Número de NN de un año de edad que tienen completo su esquema básico de vacunación en el año operativo actual",
+    "PONDERACION": 0,
+    "RANKING": 0
+  },
+  {
+    "DEN": "Meta de aceptantes de primera vez de métodos anticonceptivos en consulta externa",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "CUPN 03",
+    "NOMBRE": "Logro de aceptantes de primera vez de métodos anticonceptivos, en relación con la meta programada en consulta externa.",
+    "NUM": "Aceptantes de primera vez de métodos anticonceptivos en consulta externa",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Número de consultas otorgadas en Medicina Familiar",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "CUPN 04",
+    "NOMBRE": "Porcentaje de derechohabientes referidos al segundo nivel de atención por medicina familiar.",
+    "NUM": "Número de derechohabientes referidos al segundo nivel de atención con ocasión de servicio de primera vez, por las Unidades de Medicina Familiar",
+    "PONDERACION": 0,
+    "RANKING": 0
+  },
+  {
+    "DEN": "Número de horas trabajadas por los médicos familiares (servicio 04)",
+    "DEN_FIJO": 0,
+    "FACTOR": 1,
+    "INDICADOR": "CUPN 05",
+    "NOMBRE": "Promedio de consultas de Medicina Familiar por hora/médico.",
+    "NUM": "Número de consultas otorgadas en Medicina Familiar (servicio 04)",
+    "PONDERACION": 0,
+    "RANKING": 0
+  },
+  {
+    "DEN": "Número de niños vivos de 6 meses de edad al mes del reporte. (recién nacidos vivos de término, 6 meses previos a la fecha de reporte). menos Defunciones de lactantes clasificados como muerte neonatal e infantil del grupo de edad 0 - 6 meses, durante el periodo de 6 meses anteriores a la fecha del reporte",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "CUPN 06",
+    "NOMBRE": "Porcentaje de niños de 6 meses alimentados con lactancia materna exclusiva.",
+    "NUM": "Número de niños de 6 meses de edad que mantuvieron alimentación con lactancia materna exclusiva",
+    "PONDERACION": 0,
+    "RANKING": 0
+  },
+  {
+    "DEN": "Total de horas trabajadas por el estomatólogo",
+    "DEN_FIJO": 0,
+    "FACTOR": 1,
+    "INDICADOR": "CUPN 07",
+    "NOMBRE": "Promedio de consultas de los servicios de Estomatología asistencial por hora estomatólogo.",
+    "NUM": "Número total de consultas otorgadas en el servicio de Estomatología",
+    "PONDERACION": 3,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Recién nacidos vivos, de población derechohabiente en unidades médicas del IMSS del régimen obligatorio, distribuidos por lugar de adscripción, en el mismo periodo y área geográfica",
+    "DEN_FIJO": 0,
+    "FACTOR": 100000,
+    "INDICADOR": "CUSN 01",
+    "NOMBRE": "Razón de muerte materna hospitalaria por 100,000 nacidos vivos.",
+    "NUM": "Defunciones maternas directas e indirectas, en población derechohabiente, ocurridas en unidades médicas del régimen obligatorio del IMSS, por lugar de adscripción, en un periodo y área geográfica determinado",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de nacimientos de población derechohabiente en unidades médicas del IMSS régimen obligatorio, distribuidos por adscripción en el mismo periodo y área geográfica",
+    "DEN_FIJO": 0,
+    "FACTOR": 1000,
+    "INDICADOR": "CUSN 02",
+    "NOMBRE": "Tasa de mortalidad perinatal por 1,000 nacimientos.",
+    "NUM": "Nacidos muertos de 28 semanas o más de gestación o de 1,000 gramos y más de peso más Las defunciones de recién nacidos vivos que ocurran entre el momento del nacimiento y los primeros 6 días, 23 horas y 59 minutos",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Días laborados del personal auxiliar de enfermería en salud pública (servicio 80) durante el periodo evaluado",
+    "DEN_FIJO": 0,
+    "FACTOR": 1,
+    "INDICADOR": "CE 01",
+    "NOMBRE": "Promedio de atenciones preventivas por personal de enfermería.",
+    "NUM": "Total de atenciones preventivas otorgadas del personal auxiliar de enfermería en salud pública (servicio 80) en el periodo evaluado",
+    "PONDERACION": 0,
+    "RANKING": 0
+  },
+  {
+    "DEN": "Días laborados del personal de enfermería especialista en medicina de familia (servicio 87) durante el periodo evaluado",
+    "DEN_FIJO": 0,
+    "FACTOR": 1,
+    "INDICADOR": "CE 02",
+    "NOMBRE": "Promedio de atenciones integrales por personal de enfermería especialista en medicina de familia.",
+    "NUM": "Total de atenciones integrales otorgadas del personal de enfermería especialista en medicina de familia (servicio 87) en el periodo evaluado",
+    "PONDERACION": 0,
+    "RANKING": 0
+  },
+  {
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "CVE 01",
+    "NOMBRE": "Índice de la notificación inmediata de casos nuevos sujetos a vigilancia epidemiológica y brotes.",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "CVE 02",
+    "NOMBRE": "Oportunidad de registro de los servicios otorgados por OOAD para los cierres mensuales de información.",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "CVE 03",
+    "NOMBRE": "Oportunidad de registro de los servicios otorgados por las Unidades Médicas de Alta Especialidad (UMAE) para los cierres mensuales de información.",
+    "PONDERACION": 0,
+    "RANKING": 0
+  },
+  {
+    "DEN": "Total de alumnos en programas de formación de recursos humanos para la salud que respondienron la encuestal nacional",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "CES 01",
+    "NOMBRE": "Porcentaje de cumplimiento de estándares de calidad en ambientes académicos de programas de formación de recursos humanos para la salud.",
+    "NUM": "Total de alumnos en programas de formación de recursos humanos para la salud que evalúan positivamente los ambientes académicos en la encuesta nacional",
+    "PONDERACION": 0,
+    "RANKING": 0
+  },
+  {
+    "DEN": "Número de médicos residentes adscritos al inicio del ciclo académico del último grado del curso en las sedes de los OOAD y UMAE de cada especialidad menos Bajas no atribuibles al proceso académico ocurridas durante el ciclo del último grado del curso en las sedes de los OOAD y UMAE de cada especialidad",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "CES 02",
+    "NOMBRE": "Eficiencia terminal del último grado de los cursos de residencias médicas.",
+    "NUM": "Número de médicos residentes que obtienen diploma d e egreso al final de su ciclo académico del último grado del curso en sedes de OOAD y UMAE",
+    "PONDERACION": 0,
+    "RANKING": 0
+  },
+  {
+    "DEN": "Número total de personas del área de la salud con actividades docentes vigentes en el año que se reporta",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "CES 03",
+    "NOMBRE": "Porcentaje de personal de salud con actividades docentes vigentes que recibió capacitación en temas relacionados con la educación en OOAD y UMAE.",
+    "NUM": "Número de personas del área de la salud que tienen actividades docentes vigentes en OOAD y UMAE capacitadas en temas relacionados con la educación en el año que se reporta",
+    "PONDERACION": 0,
+    "RANKING": 0
+  },
+  {
+    "DEN": "Número de personal del área de la salud con contratación definitiva adscrito por unidad médica por OOAD y por UMAE",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "CES 04",
+    "NOMBRE": "Cobertura de capacitación a personal del área de la salud con contratación definitiva en temas prioritarios.",
+    "NUM": "Personal de área de la salud con contratación definitiva que aprueba los cursos autorizados de educación permanente en salud, en modalidad presencial y a distancia en temas prioritarios por OOAD y UMAE.",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN_FIJO": 0,
+    "FACTOR": 1,
+    "INDICADOR": "CIS 01",
+    "NOMBRE": "Número de publicaciones científicas generadas por personal del Instituto Mexicano del Seguro Social (IMSS).",
+    "NUM": "Sumatoria de artículos científicos generados por personal del IMSS y que han sido publicados en revistas médico-científicas arbitradas",
+    "PONDERACION": 0,
+    "RANKING": 0
+  },
+  {
+    "DEN": "Sumatoria de artículos científicos generados por personal del IMSS y que han sido publicados en revistas incorporadas al Journal Citation Reports",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "CIS 02",
+    "NOMBRE": "Porcentaje de publicaciones científicas con factor de impacto en cuartiles 1 y 2.",
+    "NUM": "Sumatoria de artículos científicos generados por pe rsonal del IMSS y que han sido publicados en revistas incorporadas al Journal Citation Reports y que están ubicadas en Cuartiles 1 o 2, según área de conocimiento",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN_FIJO": 0,
+    "FACTOR": 1,
+    "INDICADOR": "CIS 03",
+    "NOMBRE": "Personal IMSS formado en maestrías y doctorados en ciencias de la salud e investigación clínica.",
+    "NUM": "Sumatoria de personal institucional que completa su formación académica en, maestrías y doctorados en ciencias de la salud o investigación clínica, adscritos a OOAD o UMAE en el IMSS, del ejercicio que se evalúa",
+    "PONDERACION": 0,
+    "RANKING": 0
+  },
+  {
+    "DEN": "Sumatoria de investigadores del IMSS que cuentan con calificación curricular como investigador institucional vigente",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "CIS 04",
+    "NOMBRE": "Investigadores del Instituto Mexicano del Seguro Social (IMSS) que pertenecen al Sistema Nacional de Investigadoras e Investigadores (SNII).",
+    "NUM": "Sumatoria de investigadores del IMSS, que cuentan con nombramiento vigente otorgado por el SNII",
+    "PONDERACION": 0,
+    "RANKING": 0
+  },
+  {
+    "DEN": "Sumatoria de protocolos de investigación en salud con registro institucional generados por el personal del IMSS",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "CIS 05",
+    "NOMBRE": "Porcentaje de protocolos de investigación en salud relacionados a temas prioritarios del Instituto Mexicano del Seguro Social.",
+    "NUM": "Sumatoria de protocolos de investigación en salud con registro institucional, generados por el personal del IMSS; relacionados a temas prioritarios del Instituto Mexicano del Seguro Social",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Número de protocolos de investigación en salud que son recibidos para su evaluación en los CLIS",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "CIS 06",
+    "NOMBRE": "Porcentaje de protocolos de investigación en salud con dictamen emitido por los Comités Locales de Investigación en Salud (CLIS) en < 30 días.",
+    "NUM": "Número de protocolos de investigación en salud dictaminados por los CLIS en <= 30 días",
+    "PONDERACION": 0,
+    "RANKING": 0
+  },
+  {
+    "DEN": "Número de residentes que cursan el último año de adiestramiento de especialidad en el IMSS, registrados en el Sistema Integral de Información de la Coordinación de Educación en Salud (SIICES) e incorporado al Sistema de Registro Electrónico de la Coordinación de Investigación en Salud (SIRELCIS)",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "CIS 07",
+    "NOMBRE": "Porcentaje de residentes que culminan cursos de adiestramiento de especialización, con protocolo de investigación en salud terminado.",
+    "NUM": "Número de residentes que cursan el último año de adiestramiento de especialidad en el IMSS, con protocolos de investigación en salud, documentados como terminados en el Sistema de Registro Electrónico de la Coordinación de Investigación en Salud (SIRELCIS)",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de días paciente en Unidades médicas de segundo nivel de atención con 20 o más camas censables o en UMAE",
+    "DEN_FIJO": 0,
+    "FACTOR": 1000,
+    "INDICADOR": "IAAS 01",
+    "NOMBRE": "Tasa de Infecciones Asociadas a la Atención de la Salud por 1,000 días estancia en Unidades médicas de Segundo Nivel de atención con 20 camas censables o más o en Unidades Médicas de Alta Especialidad (UMAE).",
+    "NUM": "Total de infecciones asociadas a la atención de la salud del servicio de hospitalización en unidades médicas de segundo nivel de atención, con 20 o más camas censables o en UMAE",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de días ventilador mecánico en unidades médicas de segundo nivel de atención con 20 o más camas censables, o en UMAE",
+    "DEN_FIJO": 0,
+    "FACTOR": 1000,
+    "INDICADOR": "IAAS 02",
+    "NOMBRE": "Tasa de neumonía asociada a ventilación mecánica por 1,000 días ventilador en Unidades médicas de Segundo Nivel de atención con 20 o más camas censables o en Unidades Médicas de Alta Especialidad.",
+    "NUM": "Total de neumonías asociadas a ventilación mecánica en unidades médicas de segundo nivel de atención con 20 o más camas censables, o en UMAE",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de horas cama en el área de Observación del servicio de Urgencias en Unidades de Segundo o de Tercer Nivel",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "HOSP 01",
+    "NOMBRE": "Porcentaje de ocupación en el área de Observación del servicio de Urgencias en Unidades de Segundo o de Tercer Nivel.",
+    "NUM": "Total de horas paciente en el área de Observación d el servicio de Urgencias en las Unidades de Segundo o de Tercer Nivel",
+    "PONDERACION": 0,
+    "RANKING": 0
+  },
+  {
+    "DEN": "Total de pacientes egresados del área de Observación de los servicios de Urgencias en Unidades de Segundo o de Tercer Nivel",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "HOSP 02",
+    "NOMBRE": "Porcentaje de pacientes con estancia prolongada (más de 12 horas) en el área de Observación en Unidades de Segundo o de Tercer Nivel.",
+    "NUM": "Total de pacientes egresados del área de Observación de los servicios de Urgencias, con estancia de más de 12 horas en Unidades de Segundo o de Tercer Nivel",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de pacientes referidos para programar una consulta de Especialidad de primera vez, a partir de la presentación de la solicitud en Unidades de Segundo o de Tercer Nivel de atención",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "HOSP 03",
+    "NOMBRE": "Porcentaje de pacientes a quienes se les programa una consulta de Especialidad a los 20 días hábiles o menos a partir de su solicitud, en Unidades de Segundo o de Tercer Nivel de atención.",
+    "NUM": "Total de pacientes con cita programada de primera v ez a la consulta de especialidades en un plazo igual o menor a 20 días hábiles a partir de la fecha de solicitud en las Unidades de Segundo o de Tercer Nivel de atención",
+    "PONDERACION": 3,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Días hábiles en el periodo de medición",
+    "DEN_FIJO": 0,
+    "FACTOR": 1,
+    "INDICADOR": "HOSP 04",
+    "NOMBRE": "Promedio de consultas diarias por consultorio de especialidad en Segundo o de Tercer Nivel de atención.",
+    "NUM": "Total de consultas de especialidades otorgadas en Unidades de Segundo o de Tercer Nivel de atención / Total de consultorios de especialidad en Unidades de Segundo o de Tercer Nivel de atención",
+    "PONDERACION": 3,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Días hábiles en el periodo de medición",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "HOSP 05",
+    "NOMBRE": "Porcentaje de ocupación hospitalaria en Unidades de Segundo o de Tercer Nivel de atención.",
+    "NUM": "Total de días paciente en Unidades de Segundo o de Tercer Nivel de atención",
+    "PONDERACION": 3,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de egresos hospitalarios Unidades de Segundo o de Tercer Nivel de atención",
+    "DEN_FIJO": 0,
+    "FACTOR": 1,
+    "INDICADOR": "HOSP 06",
+    "NOMBRE": "Promedio de días estancia en Unidades de Segundo o de Tercer Nivel de atención.",
+    "NUM": "Total de días paciente en Unidades de Segundo o de Tercer Nivel de atención",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de egresos hospitalarios en Unidades de Segun do o de Tercer Nivel de atención en el periodo",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "HOSP 07",
+    "NOMBRE": "Tasa de mortalidad hospitalaria en Unidades de Segundo o de Tercer Nivel de atención.",
+    "NUM": "Total de egresos hospitalarios por defunción en Unidades de Segundo o de Tercer Nivel de atención en el periodo",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Total de pacientes con solicitud otorgada por el médico tratante para cirugía electiva no concertada en Unidades de Segundo o de Tercer Nivel de atención",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "HOSP 08",
+    "NOMBRE": "Porcentaje de pacientes a quienes se les realiza una cirugía electiva no concertada, a los 20 días hábiles o menos a partir de su solicitud, en Unidades de Segundo o de Tercer Nivel de atención.",
+    "NUM": "Total de pacientes a quienes se les realiza una cirugía electiva no concertada, dentro de los 20 días hábiles o menos a partir de la solicitud del cirujano tratante de la Unidades de Segundo o de Tercer Nivel de atención",
+    "PONDERACION": 3,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Tiempo total disponible de las salas de quirófano en días hábiles en horario diurno del mes de proceso, en Unidades de Segundo o de Tercer Nivel de atención",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "HOSP 09",
+    "NOMBRE": "Porcentaje de ocupación de las salas de quirófano en días hábiles, en horario diurno en Unidades de Segundo o de Tercer Nivel de Atención",
+    "NUM": "Tiempo total de ocupación de las salas de quirófano en días hábiles en horario diurno del periodo evaluado, en las Unidade s de Segundo o de Tercer Nivel de atención",
+    "PONDERACION": 4,
+    "RANKING": 1
+  },
+  {
+    "DEN": "Número de cirugías electivas programadas en el mes evaluado en Unidades de Segundo o de Tercer Nivel de Atención",
+    "DEN_FIJO": 0,
+    "FACTOR": 100,
+    "INDICADOR": "HOSP 10",
+    "NOMBRE": "Porcentaje de suspensión de cirugías electivas programadas en Unidades de Servicios Médicos de Segundo o de Tercer Nivel de atención.",
+    "NUM": "Número de cirugías electivas programadas suspendidas en el mes evaluado en Unidades de Segundo o de Tercer Nivel de Atención",
+    "PONDERACION": 0,
+    "RANKING": 0
+  }
+]
