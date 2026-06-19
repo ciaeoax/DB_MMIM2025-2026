@@ -1,4 +1,4 @@
-const MODO_DESARROLADOR = false;
+const MODO_DESARROLADOR = true;
 
 if (MODO_DESARROLADOR){
 	console.log('modo desarrollador');
